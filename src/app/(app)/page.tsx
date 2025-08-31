@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "motion/react";
 import React from "react";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Link from "next/link";

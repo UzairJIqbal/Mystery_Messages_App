@@ -1,13 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import axios, { isCancel, AxiosError } from "axios";
 import { signInSchema } from "@/schemas/signInSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
-import { ApiResponse } from "@/types/ApiResponse";
 import { signIn } from "next-auth/react";
 import {
   Form,

@@ -3,7 +3,6 @@ import { getServerSession, User } from "next-auth";
 import { authOptions } from "../auth/[...nextauth]/options";
 import mongoose from "mongoose";
 import dbconnect from "@/lib/dbConnect";
-import { error } from "console";
 
 
 export async function GET(request: Request) {

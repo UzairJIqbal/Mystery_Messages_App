@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useEffect, startTransition } from "react";
-import { useDebounceCallback, useDebounceValue } from "usehooks-ts";
+import React, { useState, useEffect } from "react";
+import { useDebounceCallback} from "usehooks-ts";
 import { useRouter } from "next/navigation";
-import axios, { isCancel, AxiosError } from "axios";
+import axios, { AxiosError } from "axios";
 import { ApiResponse } from "@/types/ApiResponse";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -24,7 +24,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const [username, setUsername] = useState("");
   const [usernameMessage, setUsernameMessage] = useState("");
   const [isCheckingUsername, setIsCheckingUsername] = useState(false);
@@ -226,4 +226,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

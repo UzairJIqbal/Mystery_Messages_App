@@ -1,7 +1,5 @@
 import bcrypt from "bcryptjs";
 import dbconnect from "@/lib/dbConnect";
-import { success } from "zod";
-import { NextResponse } from "next/server";
 import UserModel from "@/model/User.model";
 import { sendVerificationEmail } from "@/helpers/sendVerificationEmail";
 
